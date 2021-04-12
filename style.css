@@ -4,6 +4,8 @@ body {
   padding: 0;
 }
 
+/* Main page */
+
 .hero-wrapper {
   display: flex;
   justify-content: center;
@@ -27,13 +29,16 @@ body {
 }
 
 /* föräldra boxen link-holder styr placeringen av dess barn och barnets element*/
-
 h1 {
-  color: rgba(3, 3, 3, 0.741);
+  font-size: 1.8rem;
+}
+
+.hero-bg h1 {
+  color: rgba(14, 110, 26, 0.585);
   text-align: center;
   position: relative;
   bottom: 5rem;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 /* Muspekare som ändrar textfärg när den hålls på hyperlinken*/
 a:hover {
@@ -41,9 +46,20 @@ a:hover {
   cursor: pointer;
 }
 
+.meals-headline {
+     text-align: center;
+}
+
 p {
   font-size: 1.3rem;
   font-family: 'EB Garamond', serif;
+  
+}
+
+button {
+  position: absolute;
+  top: 5.6rem;
+  left: 6rem;
 }
 
 .link-holder {
@@ -59,7 +75,7 @@ p {
   align-self: flex-start;
   position: relative;
   top: 1.5rem;
-  padding-left: 8rem;
+  padding-left: 20rem;
 }
 
 .hyper-link-2 {
@@ -68,8 +84,8 @@ p {
   color: black;
   align-self: flex-end;
   position: relative;
-  bottom: 3.6rem;
-  padding-right: 5.6rem;
+  bottom: 3.8rem;
+  padding-right: 17.5rem;
 }
 
 .hyper-link-3 {
@@ -79,7 +95,7 @@ p {
   align-self: flex-start;
   position: relative;
   top: 8rem;
-  padding-left: 11.7rem;
+  padding-left: 24rem;
 }
 
 .hyper-link-4 {
@@ -89,13 +105,72 @@ p {
   align-self: flex-end;
   position: relative;
   top: 4.3rem;
-  padding-right: 2rem;
+  padding-right: 15.3rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info {
+  position: absolute;
+  bottom: 5.5rem;
 }
 
 .hyper-link-5 {
   background-color: transparent;
   color: black;
-  align-self: center;
-  position: relative;
-  top: 13rem;
 }
+
+/* Best before date link */
+
+.best-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 90px;
+  margin: 70px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    height: 65vh;
+}
+
+.best-container h1 {
+  position: relative;
+  bottom: 2rem;
+}
+
+.best-card {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  height: 55vh;
+  width: 35vw;
+  margin: 0 auto;
+  padding: 1rem 10rem;
+  text-align: left;
+}
+
+.best-card > p {
+  font-size: 1rem;
+}
+
+img {
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
